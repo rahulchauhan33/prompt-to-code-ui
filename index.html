@@ -24,7 +24,7 @@
       const prompt = document.getElementById("prompt").value;
       const framework = document.getElementById("framework").value;
 
-      const response = await fetch("https://rcrahulkumar-prompt-to-code-backend.hf.space/run/predict", {
+      const response = await fetch("https://rcrahulkumar/prompt-to-code-backend.hf.space/run/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ data: [prompt, framework] })
